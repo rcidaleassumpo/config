@@ -1,0 +1,27 @@
+{
+  "L1VzZXJzL3JlbmFuL0Rvd25sb2Fkcw==": [
+    "tailwin",
+    "terminal"
+  ],
+  "L1VzZXJzL3JlbmFuL3dlYmFwcC1mZS9hcHA=": [
+    "yaml",
+    "emmet",
+    "coc-prett",
+    "git"
+  ],
+  "L1VzZXJzL3JlbmFu": [
+    "ult"
+  ],
+  "L1VzZXJzL3JlbmFuLy5ydXN0X3R1dG9yaWFscw==": [
+    "rust"
+  ],
+  "L1VzZXJzL3JlbmFuLy5wZGY=": [
+    "go"
+  ],
+  "L1VzZXJzL3JlbmFuL2dv": [
+    "rust"
+  ],
+  "L1VzZXJzL3JlbmFuL3J1c3Q=": [
+    "rust"
+  ]
+}

@@ -1,0 +1,1193 @@
+c89e6a820bed05dce072401029d044af|file:///Users/renan/.config/nvim/init.vim|259|1|V|vim
+	\   { 'uc': [ 'Update CoC Plugins', ':CocUpdate' ] },
+58083b5930fcb5920950942cda76a47f|file:///Users/renan/.config/nvim/init.vim|336|1|V|vim
+	autocmd CursorHold * silent call CocActionAsync('highlight')
+83219f8dfa189528efef06845c044c71|file:///Users/renan/.config/nvim/init.vim|367|1|V|vim
+	
+	" " Applying codeAction to the selected region.
+	" " Example: `<leader>aap` for current paragraph
+	" xmap <leader>ca  <Plug>(coc-codeaction-selected)
+	" nmap <leader>ca  <Plug>(coc-codeaction-selected)
+	
+	" " Remap keys for applying codeAction to the current buffer.
+	" nmap <leader>ac  <Plug>(coc-codeaction)
+	" " Apply AutoFix to problem on the current line.
+	
+	" nmap <leader>qf  <Plug>(coc-fix-current)
+f6980d5c74c5d8e6191f5301050670a9|file:///Users/renan/.config/nvim/init.vim|187|1|V|vim
+	" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
+	" unicode characters in the file autoload/float.vim
+	set encoding=utf-8
+b659d7c7d9c0d82f22c23e7ced2789b9|file:///Users/renan/.config/nvim/init.vim|7|7|v|vim
+	coc-n
+ae1d590391b2ac3f7ef934f10bd9c719|file:///Users/renan/webapp-fe/app/cypress.json|1|1|V|json
+	{
+	  "baseUrl": "http://localhost:3000",
+d9373bc9657aa5adaaab71debd5cb280|file:///Users/renan/webapp-fe/app/src/pages/Request/Requests.tsx|22|1|V|typescriptreact
+	    if (items.map((item) => item.vertical_slug)) return true
+72066e719b67188fd1d68ca9b076938c|file:///Users/renan/webapp-fe/app/src/pages/Request/Requests.tsx|22|26|v|typescriptreact
+	99909999
+1106f892cb7c01218bf6389650f922fa|file:///Users/renan/.config/nvim/init.vim|6|1|V|vim
+	Plug 'neoclide/coc.nvim'
+db722b09eecc25d04276cd46ddaf1e41|file:///Users/renan/.config/nvim/init.vim|408|20|v|vim
+	pyright
+e2c3dae20b66194ca0b56b95b48bbc94|file:///Users/renan/.config/nvim/init.vim|407|1|v|vim
+	lua << EOF
+	require'lspconfig'.tsserver.setup{}
+	E
+e22e1e362e986e047e673c4455272b88|file:///Users/renan/.config/nvim/init.vim|457|19|v|vim
+	"pyright", "rust_analyzer",
+05130135b00fe6251e7c84fa9925ad6d|file:///Users/renan/.config/nvim/init.vim|440|1|V|vim
+	  -- Set autocommands conditional on server_capabilities
+	  if client.resolved_capabilities.document_highlight then
+	    vim.api.nvim_exec([[
+	      hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
+	      hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
+	      hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow
+	      augroup lsp_document_highlight
+	        autocmd! * <buffer>
+	        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+	        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+	      augroup END
+	    ]], false)
+	  end
+	end
+e8dbfdbcb05df0ae84916171555c6152|file:///Users/renan/.config/nvim/init.vim|441|1|V|vim
+	  if client.resolved_capabilities.document_highlight then
+	    vim.api.nvim_exec([[
+	      hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
+	      hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
+	      hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow
+	      augroup lsp_document_highlight
+	        autocmd! * <buffer>
+	        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+	        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+	      augroup END
+	    ]], false)
+	  end
+f3665a47222a85fb46e14943aec2e256|file:///Users/renan/.config/nvim/init.vim|417|1|V|vim
+	  buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+4bcacbffcee5ab822e9a828975222eff|file:///Users/renan/.config/nvim/init.vim|43|1|V|vim
+	Plug 'christoomey/vim-tmux-navigator'
+c3fff8f6deee5fdf1cbed1d8015264b3|file:///Users/renan/.config/nvim/init.vim|31|1|V|vim
+	" Plug 'mhinz/vim-startify'
+521802480f75c6b577696d1ddd5d4aa6|file:///Users/renan/.config/nvim/init.vim|14|1|V|vim
+	" Plug 'kosayoda/nvim-lightbulb'
+98cc6470543b3be614eab5af80b1793c|file:///Users/renan/.config/nvim/init.vim|9|1|V|vim
+	"------------------------ VIM TSX ------------------------
+	" " by default, if you open tsx file, neovim does not show syntax colors
+	" " vim-tsx will do all the coloring for jsx in the .tsx file
+	" Plug 'RishabhRD/popfix'
+	" Plug 'RishabhRD/nvim-lsputils'
+	" Plug 'nvim-lua/diagnostic-nvim'
+	" Plug 'nvim-lua/completion-nvim'
+6d497bc83fe7c099c3c125c151ba3afe|file:///Users/renan/.config/nvim/init.vim|13|1|V|vim
+	" Plug 'dikiaap/minimalist'
+76cf50bb0f1f2e15d918eaf746494dd8|file:///Users/renan/.config/nvim/init.vim|516|1|v|vim
+	"autocmd BufEnter * lua require'completion'.on_attach()
+0e6baa19cb6141d07829f554453c7024|file:///Users/renan/.config/nvim/init.vim|13|1|V|vim
+	" Plug 'sbdchd/neoformat'
+1b359ff6d6b6614119fff9ec279705a8|file:///Users/renan/.config/nvim/init.vim|13|1|V|vim
+	" Plug 'neovim/nvim-lspconfig'
+a13040ccb3944453d39e83296cb9601a|file:///Users/renan/.config/nvim/init.vim|38|1|V|vim
+	" " Any valid git URL is allowed
+	" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+066e1d158b618029f279df9bcbadd5b3|file:///Users/renan/.config/nvim/init.vim|38|1|V|vim
+	" Plug 'preservim/tagbar'
+f903f66ffdad62823549a200508ec84f|file:///Users/renan/.config/nvim/init.vim|40|1|V|vim
+	" Plug 'drewtempelmeyer/palenight.vim'
+81396d0773b7b221528e44fcba7dbe09|file:///Users/renan/.config/nvim/init.vim|35|1|V|vim
+	" " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+705e18a1613bd2c966f1c1b939c0f521|file:///Users/renan/.config/nvim/init.vim|29|1|V|vim
+	" " Make sure you use single quotes
+8ad5ce71c14df2a84628088847c5a3de|file:///Users/renan/.config/nvim/init.vim|38|1|V|vim
+	" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+0e731d14e50b4cc7592a52527459889a|file:///Users/renan/.config/nvim/init.vim|23|1|V|vim
+	Plug 'tools-life/taskwiki'
+071580518ab18d8f3d1c0ad1957ad9b6|file:///Users/renan/.config/nvim/init.vim|41|1|V|vim
+	" Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+1305e43db35fc1951c3a411677ab47cb|file:///Users/renan/.config/nvim/init.vim|41|1|V|vim
+	" " Plugin outside ~/.vim/plugged with post-update hook
+8869dc8ae73966cdc74b3bf2e8c0a25f|file:///Users/renan/.config/nvim/init.vim|15|1|V|vim
+	" Plug 'junegunn/goyo.vim'
+2d6336398789ed9eb076f8450ef16024|file:///Users/renan/.config/nvim/init.vim|357|1|V|vim
+	nmap     <C-F>f <Plug>CtrlSFPrompt
+	vmap     <C-F>f <Plug>CtrlSFVwordPath
+	vmap     <C-F>F <Plug>CtrlSFVwordExec
+	nmap     <C-F>n <Plug>CtrlSFCwordPath<CR>
+	nmap     <C-F>p <Plug>CtrlSFPwordPath<CR>
+	nnoremap <C-F>o :CtrlSFOpen<CR>
+	nnoremap <C-F>t :CtrlSFToggle<CR>
+	inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
+f6dd9b0a979230931f07d59c57a87a2b|file:///Users/renan/.config/nvim/init.vim|48|1|V|vim
+	Plug 'SirVer/ultisnips'
+	Plug 'honza/vim-snippets'
+a61221ec121e53127aa766fa3c1152ce|file:///Users/renan/.config/nvim/init.vim|65|1|V|vim
+	"if (has("termguicolors"))
+	" set termguicolors
+	"endif
+871bdac39acd9d5b3984aee35a247b74|file:///Users/renan/.config/nvim/init.vim|66|1|V|vim
+	"syntax enable
+	"" Set completeopt to have a better completion experience
+2d1c64b37a4c33b23172eca0bf2f9468|file:///Users/renan/.config/nvim/init.vim|141|1|V|vim
+	"" Zoom in
+	"map <silent> ,gz <C-w>o
+	"" Create window splits easier. The default
+	"" way is Ctrl-w,v and Ctrl-w,s. I remap
+	"" this to vv and ss
+	"nnoremap <silent> vv <C-w>v
+	"nnoremap <silent> ss <C-w>s
+a313e65421c1d4a58b0c95241b17f334|file:///Users/renan/.config/nvim/init.vim|522|1|^v|vim
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+5be4b6a518bd948e31569a55cc151842|file:///Users/renan/.config/nvim/init.vim|369|1|V|vim
+	nnoremap <silent><nowait> cc :q!<CR>
+	nnoremap <silent><nowait> <leader>rc :so ~/.config/nvim/init.vim<CR>
+0c1df95c4732b88a32657509b0aea5e0|file:///Users/renan/.config/nvim/init.vim|510|1|V|vim
+	" should use `Leaderf gtags --update` first
+	let g:Lf_GtagsAutoGenerate = 0
+	let g:Lf_Gtagslabel = 'native-pygments'
+	noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+	noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+	noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
+	noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
+	noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+	
+c0cc4d9a2cd48cd7dd7cfa4193bdaf58|file:///Users/renan/.config/nvim/init.vim|67|1|^v|vim
+	"
+	"
+	
+	"
+	"
+	"
+	"
+	
+	"
+	"
+	"
+	"
+	"
+	
+	"
+	"
+70f9510443b97f852149a0c915ab0036|file:///Users/renan/.config/nvim/init.vim|83|1|V|vim
+	"" Vimwiki related stuff
+b69742838dbd9cf8bce763f680742217|file:///Users/renan/.config/nvim/init.vim|125|1|^v|vim
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+e0bb7167de4669b36d1a5218fba42e35|file:///Users/renan/.config/nvim/init.vim|154|1|v|vim
+	"noremap ,hl :set hlsearch! hlsearch?<CR>
+0d29cfc8477c02ed44da955bd27f8665|file:///Users/renan/.config/nvim/init.vim|153|1|V|vim
+	"" Type ,hl to toggle highlighting on/off, and show current value.
+a0ca6eb1cec2588681862310fd357eb4|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|6|13|v|javascript
+	EnhancedSurveyNotication 
+c58624a141d538d71f06b572b000f6e4|file:///Users/renan/.config/nvim/init.vim|397|1|V|vim
+	"lua << EOF
+	"local nvim_lsp = require('lspconfig')
+	"local on_attach = function(client, bufnr)
+	"  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+	"  local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+	
+	"  buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+	
+	"  -- Mappings.
+	"  local opts = { noremap=true, silent=true }
+	"  buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+	"  buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+	"  buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+	"  buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+	"  buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+	"  buf_set_keymap('n', '<leader>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+	"  buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+	"  buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
+	"  buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+	"  buf_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+	
+	"vim.lsp.handlers['textDocument/codeAction'] = require'lsputil.codeAction'.code_action_handler
+	"vim.lsp.handlers['textDocument/references'] = require'lsputil.locations'.references_handler
+	"vim.lsp.handlers['textDocument/definition'] = require'lsputil.locations'.definition_handler
+	"vim.lsp.handlers['textDocument/declaration'] = require'lsputil.locations'.declaration_handler
+	"vim.lsp.handlers['textDocument/typeDefinition'] = require'lsputil.locations'.typeDefinition_handler
+	"vim.lsp.handlers['textDocument/implementation'] = require'lsputil.locations'.implementation_handler
+	"vim.lsp.handlers['textDocument/documentSymbol'] = require'lsputil.symbols'.document_handler
+	"vim.lsp.handlers['workspace/symbol'] = require'lsputil.symbols'.workspace_handler
+	
+	"  -- Set some keybinds conditional on server capabilities
+	"  if client.resolved_capabilities.document_formatting then
+	"    buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+	"  elseif client.resolved_capabilities.document_range_formatting then
+	"    buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+	"  end
+	
+	"  -- Set autocommands conditional on server_capabilities
+	"  if client.resolved_capabilities.document_highlight then
+	"    vim.api.nvim_exec([[
+	"      hi LspReferenceRead cterm=bold ctermbg=red guibg=LightYellow
+	"      hi LspReferenceText cterm=bold ctermbg=red guibg=LightYellow
+	"      hi LspReferenceWrite cterm=bold ctermbg=red guibg=LightYellow
+	"      augroup lsp_document_highlight
+	"        autocmd! * <buffer>
+	"        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+	"        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+	"      augroup END
+	"    ]], false)
+	"  end
+	"end
+	
+	"-- Use a loop to conveniently both setup defined servers 
+	"-- and map buffer local keybindings when the language server attaches
+	"local servers = {"tsserver"}
+	"for _, lsp in ipairs(servers) do
+	"  nvim_lsp[lsp].setup { on_attach = require'completion'.on_attach }
+	"end
+	"EOF
+	
+	
+	"autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
+	"" Use completion-nvim in every buffer
+123f51bbb2d7a78478d97eb749319789|file:///Users/renan/.config/nvim/init.vim|380|1|V|vim
+	""Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+	""If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+	""(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+	"if (empty($TMUX))
+	"  if (has("nvim"))
+	"    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+	"    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+	"  endif
+	"  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+	"  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+	"  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+	"  if (has("termguicolors"))
+	"    set termguicolors
+	"  endif
+	"endif
+823e0230f830a2278f9ce5df5c69ee24|file:///Users/renan/.config/nvim/init.vim|373|1|V|vim
+	"" Use completion-nvim in every buffer
+	"autocmd BufEnter * lua require'completion'.on_attach()
+	"let g:completion_enable_snippet = 'UltiSnips'
+	"let g:UltiSnipsExpandTrigger="<tab>"
+	"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+	"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+0395de8b93f3e465762218ba2cf44f1e|file:///Users/renan/.config/nvim/init.vim|364|1|V|vim
+	"augroup fmt
+	"  autocmd!
+	"  autocmd BufWritePre * undojoin | Neoformat
+	"augroup END
+	
+	"" Avoid showing message extra message when using completion
+	"set shortmess+=c
+4f65c8e5deb03aad26b985ffd08c791b|file:///Users/renan/.config/nvim/init.vim|339|1|V|vim
+	"" don't show the help in normal mode
+	"let g:Lf_HideHelp = 1
+	"let g:Lf_UseCache = 0
+	"let g:Lf_UseVersionControlTool = 0
+	"let g:Lf_IgnoreCurrentBufferName = 1
+	"" popup mode
+	"" let g:Lf_WindowPosition = 'popup'
+	"let g:Lf_PreviewInPopup = 1
+	"let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
+	"let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
+	
+	"let g:Lf_ShortcutF = "<leader>ff"
+	"noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+	"noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+	"noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
+	"noremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
+	
+	"noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
+	"noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+	"" search visually selected text literally
+	"xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
+	"noremap go :<C-U>Leaderf! rg --recall<CR>
+	"let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
+1450f64db868d65c3ab6fe8eae9e3b90|file:///Users/renan/.config/nvim/init.vim|333|1|V|vim
+	"" Install all plugins
+	"if exists("s:first_init")
+	"    PlugInstall
+	"endif
+	"" }}}
+91f8cbb7b66db13988582919e64ba344|file:///Users/renan/.config/nvim/init.vim|328|1|V|vim
+	""start a search query by pressing \
+	"nnoremap \  :Ag<space>
+	""search for word under cursor by pressing |
+	"nnoremap \| :Ag <C-R><C-W><cr>:cw<cr>
+dc52756a9749e673f3176959255ad73f|file:///Users/renan/.config/nvim/init.vim|310|1|V|vim
+	"nmap <silent> <leader>s :GFiles?<cr>
+	"nmap <silent> <leader>r :Buffers<cr>
+	"nmap <leader><tab> <plug>(fzf-maps-n)
+	"xmap <leader><tab> <plug>(fzf-maps-x)
+	"omap <leader><tab> <plug>(fzf-maps-o)
+	
+	"" The Silver Searcher
+	"if executable('ag')
+	"  " Use ag over grep
+	"  set grepprg=ag\ --nogroup\ --nocolor
+	
+	"  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+	"  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+	
+	"  " ag is fast enough that CtrlP doesn't need to cache
+	"  let g:ctrlp_use_caching = 0
+	"endif
+f97406d98af5f815de67ed7c36c2648a|file:///Users/renan/.config/nvim/init.vim|298|1|V|vim
+	autocmd! User GoyoEnter nested call helpers#goyo#enter()
+96c11b2273ecf384b050d7bee355e185|file:///Users/renan/.config/nvim/init.vim|298|1|V|vim
+	"autocmd! User GoyoLeave nested call helpers#goyo#leave()
+46ba3dd4de2b094b9d1bb5dcb9bb7088|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|7|24|v|javascript
+	veyNotication items={[{ vertical_slug: 'vertical_slug' }]} />)
+67429fcfb07d4c8a5e19003eba0c26cf|file:///Users/renan/.config/nvim/init.vim|262|1|V|vim
+	"nnoremap <silent> <Leader>C :call fzf#run({
+	"\   'source':
+	"\     map(split(globpath(&rtp, "colors/*.vim"), "\n"),
+	"\         "substitute(fnamemodify(v:val, ':t'), '\\..\\{-}$', '', '')"),
+	"\   'sink':    'colo',
+	"\   'options': '+m',
+	"\   'left':    30
+	"\ })<CR>
+	
+	"command! FZFMru call fzf#run({
+	"\  'source':  v:oldfiles,
+	"\  'sink':    'e',
+	"\  'options': '-m -x +s',
+	"\  'down':    '40%'})
+	
+	"command! -bang -nargs=* Find call fzf#vim#grep(
+	"    \ 'rg --column --line-number --no-heading --follow --color=always '.<q-args>.' || true', 1,
+	"    \ <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%:hidden', '?'), <bang>0)
+	"command! -bang -nargs=? -complete=dir Files
+	"    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview('right:50%', '?'), <bang>0)
+	"command! -bang -nargs=? -complete=dir GitFiles
+	"    \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview('right:50%', '?'), <bang>0)
+	"function! RipgrepFzf(query, fullscreen)
+	"    let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case -- %s || true'
+	"    let initial_command = printf(command_fmt, shellescape(a:query))
+	"    let reload_command = printf(command_fmt, '{q}')
+	"    let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+	"    call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+	"endfunction
+	
+	"command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+fa400b84175219383b5b6478dc13610d|file:///Users/renan/.config/nvim/init.vim|241|1|V|vim
+	
+	"let g:fzf_layout = { 'down': '~25%' }
+	
+	" if isdirectory(".git")
+	"     " if in a git project, use :GFiles
+	"     nmap <silent> <leader>t :GitFiles --cached --others --exclude-standard<cr>
+	" else
+	"     " otherwise, use :FZF
+	"     nmap <silent> <leader>t :FZF<cr>
+	" endif
+	
+	"" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+	"if executable('ag')
+	"  " Use Ag over Grep
+	"  set grepprg=ag\ --nogroup\ --nocolor
+	
+	"  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+	"  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+	"endif
+a50362353a6fa4b80304f2985b130e61|file:///Users/renan/.config/nvim/init.vim|234|1|V|vim
+	"nmap <leader>st :Startify<cr>
+33da9903a022614e459c9de9babd681e|file:///Users/renan/.config/nvim/init.vim|205|1|v|vim
+	 " Don't change to directory when selecting a file
+11bc7380b1530b82f34b5188bde3ba27|file:///Users/renan/.config/nvim/init.vim|205|1|V|vim
+	
+	let g:startify_files_number = 5
+0ce3c06bcf3f2e3538d863fb22601e59|file:///Users/renan/.config/nvim/init.vim|191|1|V|vim
+	"nmap <silent> gTT :tab sb<cr>
+	""
+	"" Go to tab by number
+	"noremap <leader>1 1gt
+	"noremap <leader>2 2gt
+	"noremap <leader>3 3gt
+	"noremap <leader>4 4gt
+	"noremap <leader>5 5gt
+	"noremap <leader>6 6gt
+	"noremap <leader>7 7gt
+	"noremap <leader>8 8gt
+	"noremap <leader>9 9gt
+	"noremap <leader>0 :tablast<cr>
+f55a6a2d19d262cbf0c52ae7c4403f8b|file:///Users/renan/.config/nvim/init.vim|183|1|V|vim
+	"" clear highlight search
+	"noremap <space> :set hlsearch! hlsearch?<cr>
+c65f950d89cbbe9fbc557878758ae00a|file:///Users/renan/.config/nvim/init.vim|166|1|V|vim
+	"" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+	"" delays and poor user experience.
+	set updatetime=300
+9b3703e0c2b63cdd39756d748e4d5d17|file:///Users/renan/.config/nvim/init.vim|83|1|^v|vim
+	""
+	""
+	""
+	""
+	""
+	""
+	""
+	""
+	""
+	""
+e772707452e83cf6bd59492efda67846|file:///Users/renan/.config/nvim/init.vim|32|1|V|vim
+	" Plug 'powerman/vim-plugin-AnsiEsc'
+940edc968cab9214844a192d720c7684|file:///Users/renan/.config/nvim/init.vim|90|1|V|vim
+	"if (has("nvim"))
+	"  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+	"  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+	"endif
+1b9d9898e4db11275ff0c34cc8590673|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|7|12|v|javascript
+	<EnhancedSurveyNotication items={[{ vertical_slug: 'vertical_slug' }]} />
+f80c39f7195889e44f5a430cf1d569ec|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|8|8|v|javascript
+	MemoryRouter
+2bee67e92b30c6a5abdfda75022245d1|file:///Users/renan/.config/nvim/init.vim|454|1|V|vim
+	nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+4f3bc25e315f8ff5f08b9aa74e11689a|file:///Users/renan/.config/nvim/init.vim|454|1|V|vim
+	nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+7612595d1870768bb88ea26a1d6ba35d|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|7|9|v|javascript
+	Display Test Alert
+cc63c46eceffec53ae2c3c617b4a1fa6|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|14|46|v|javascript
+	Plants
+424822179caa68884a314d60d95bdef8|file:///Users/renan/.config/nvim/init.vim|90|1|V|vim
+	
+	"For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+	"Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+	" < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+	" if (has("termguicolors"))
+	"   set termguicolors
+	" endif
+	
+f135002e9b0421e58d49edc710c5fe7f|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|24|10|v|javascript
+	EnhancedcrveyNotication
+2ee35dc45edc4ce9450b491939f27628|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|24|10|v|javascript
+	Ehnanced
+59e006e29c15f4710d742ffc8226ec70|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|24|10|v|javascript
+	EnhancedSurveyNotication
+218e52adbdcbed5e83b4889fe822575c|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|21|45|v|javascript
+	slug is passed in render 
+3bff485d3d27cae480eb4408e306ba5e|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|24|10|v|javascript
+	EnhancedSurveyNoticatio
+6b7fd84c6eabaf7124edda9127c578ca|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|54|v|javascript
+	textContent
+aa9861f03639e2786c06213c5b3e6d23|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|55|v|javascript
+	toContain
+9b7d8ce28935c1e322bb470c95670935|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|13|1|V|typescriptreact
+	  const { t } = useTranslation()
+c5a25ad686687bde6fd2529b8e3fe12e|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|34|v|javascript
+	notification-text
+88354d4ba914f2ded2574386a2493996|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|29|48|v|typescriptreact
+	testid
+3a2a3236893d6b67cfc52a0ba8caea6c|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|30|1|V|typescriptreact
+	        Hello
+6ce3b909336e60ec7e64df0068d5c1ec|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|27|1|V|typescriptreact
+	    return result.join(', ')
+c898c2eee16310bf926fe57a10672a64|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|26|1|V|typescriptreact
+	  console.info('hello')
+b39b1ecf8e654dafba650e9dbb25f149|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|29|1|V|typescriptreact
+	  return (
+a2f3fc373283eae458d627fd6213ce8a|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|16|1|V|typescriptreact
+	  console.info('Hello')
+b7f96780f469ef613fdaab021e73d689|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|14|1|V|typescriptreact
+	  const { hasFurniture, hasPlants } = getEnhancedSurveyInfo(items.map((item) => item.vertical_slug))
+cb5e100e5a9a3e7f6d1fd97512215282|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|18|14|v|typescriptreact
+	error
+b2bb9c0e355541953e9d0ceee4287706|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|22|1|V|typescriptreact
+	    const { hasFurniture, hasPlants } = getEnhancedSurveyInfo(
+22be3cc8570ebaf14aa7dd4734f9bbb8|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|21|1|V|typescriptreact
+	    const { hasFurniture, hasPlants } = getEnhancedSurveyInfo(
+	      items.map((item) => item.vertical_slug),
+	    )
+	    let result = []
+	
+	    if (hasFurniture) {
+	      result.push(t('general.plants'))
+	    }
+	    if (hasPlants) {
+	      result.push(t('general.furniture'))
+	    }
+	    return result.join(', ')
+a6f14a0bb80e261a13610f48be892ac5|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|31|1|V|typescriptreact
+	      log(string)
+e82f3e56d2a6718da3f068e5e6f91343|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|25|1|V|typescriptreact
+	      }
+7e16910cee44d90a0d2d51e2bedf3a6f|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|6|1|V|typescriptreact
+	import {log} from 'util'
+5d41402abc4b2a76b9719d911017c592|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|28|20|v|typescriptreact
+	hello
+68aa24421da7ba112a6c9ee39fb36f56|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|41|43|v|typescriptreact
+	data-testid="notification-text"
+3cbd38c189508e7a653d3b8c0a58a09b|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|42|1|V|typescriptreact
+	         {t('requests.survey.notification', { slugs: buildNotificationDynamicSlugsText() })}
+d1f74429f651557f56c9e52a31aa9c98|file:///Users/renan/.config/nvim/init.vim|166|1|V|vim
+	""" Always show the signcolumn, otherwise it would shift the text each time
+	""" diagnostics appear/become resolved.
+	""if has("patch-8.1.1564")
+	""  " Recently vim can merge signcolumn and number column into one
+	""  set signcolumn=number
+	""else
+	""  set signcolumn=yes
+	""endif
+745f7f195b2177ffe40db0ebb6132ef2|file:///Users/renan/.config/nvim/init.vim|249|1|V|vim
+	noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
+	noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+71ea0e327c471f9c228cc3f42c7b40ff|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|15|3|V|typescriptreact
+	  // const buildNotificationDynamicSlugsText = () => {
+	  //   try {
+866ab84d746dd9dad926abff6c8063e0|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|40|1|V|typescriptreact
+	      <div className="text-lendis-orange">
+	        {t('requests.survey.notification', { slugs: buildNotificationDynamicSlugsText() })}
+	      </div>
+e13f0b30416c610f1cdf9a317a07891f|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|47|12|v|typescriptreact
+	t('enhnaced.survey.notification.link')
+5c7036abf24b29c1112f13c04d2b1f91|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|45|1|V|typescriptreact
+	        <ProgressBar
+	          containerStyle="flex flex-1 border-2 rounded-full border-lendis-main h-4 p-0.5"
+	          className="rounded-2xl"
+	          progress={40}
+	          inactiveColor="white"
+	        />
+88b498de727ce160065d7d9b161f5de2|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|5|1|V|typescriptreact
+	import { ProgressBar } from '../../components/Base'
+b858ba3166fe04f245b6abac0e45e38b|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|40|1|V|typescriptreact
+	      <div className="text-lendis-orange" data-testid="notification-text">
+	        {t('requests.survey.notification', { slugs: buildNotificationDynamicSlugsText() })}
+	      </div>
+	      <div className="flex items-center flex-1 pl-12 space-x-10">
+	        <Link className="underline bg-lendis-light-orange text-lendis-main" to="/stuff">
+	          {t('enhnaced.survey.notification.link')}
+	        </Link>
+	      </div>
+052474c89c8643170ab32ec99d8aebf8|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|38|20|v|typescriptreact
+	notification-container
+415872e454d37d9f506bd48df8b82412|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|27|v|javascript
+	getByTestId
+39cf3fdc04f5eab5abf4c85bee198261|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|27|v|javascript
+	queryTestById
+bd88e53e90da90dc8d9106474968e024|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|24|1|V|javascript
+	        {}
+f02a88c624eb155364aa3a06c43fe56a|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|1|V|javascript
+	      expect(screen.getByRole('container')).toHaveTextContent(''),
+ce7c1561b702b64228e7e32425e342f8|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|28|1|V|typescriptreact
+	      console.info(hello)
+cb89c872dc934007db4a1e554deb2ddc|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|1|V|javascript
+	      expect(screen.getByTestId('notification-container')).toHaveTextContent(''),
+81f549cbd373cb9a74ab6052dfe41843|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|27|1|V|javascript
+	      expect(screen.getByTestId('notification-text')).toHaveTextContent(''),
+971fd8cc345d8bd9f92e9f7d88fdf20c|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|16|26|v|typescriptreact
+	Dynamic
+ad04ef3746151e0d036b5c7cf6f9bfc4|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|8|33|v|javascript
+	window._ci
+be8e520ac09bc0615ae66f196b68c34d|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|10|1|V|javascript
+	    showTranslationKeys && showTranslationKeys()
+e2e15171b15cf81cef38505114ab9c6f|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|8|5|v|javascript
+	const showTranslationKeys = 
+9f59c33d2cb657e25106e05ee004514e|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|8|1|V|javascript
+	  beforeAll(() => {
+	    window?._ci()
+	  })
+e867b34e496001b68a5c3e769a2680a5|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|20|1|V|typescriptreact
+	      result.push(t('general.plants'))
+9f482069a21e21afb2a29fb7d6545eb6|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|23|1|V|typescriptreact
+	      result.push(t('general.furniture'))
+8e0791c53ea70747a89bde2218540d33|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|17|72|v|javascript
+	Pflanzen
+b946a84bf889cc250531332b85fd6544|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|33|90|v|javascript
+	plants
+2da39299c5cf72ddce64d1776349ebc8|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|39|82|v|javascript
+	Mobel
+0e9b3196400e0cd98f2a2589ed7c7475|file:///Users/renan/webapp-fe/app/src/__tests__/unit/pages/Request/EnhancedSurveyNotification.spec.js|41|1|V|javascript
+	  test('when plants and furniture is passed render both Translations with a comma', () => {
+	    render(
+	      <MemoryRouter>
+	        <EnhancedSurveyNotication
+	          items={[{ vertical_slug: 'plants' }, { vertical_slug: 'furniture' }]}
+	        />
+	      </MemoryRouter>,
+	    )
+	
+	    expect(screen.getByTestId('notification-text')).toHaveTextContent(/Möbel, Pflanzen/)
+	  })
+35916517674eb0f43f6bd27acbfc0359|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|8|10|v|typescriptreact
+	{ vertical_slug: string }
+d1f1dc1add38b9212a49e1cd01f9718a|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|16|1|V|javascript
+	        vertical_slug: '',
+268184c12df027f536154d099d497b31|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|37|10|v|typescriptreact
+	children
+eb0beb7163f1046e99886a6dfbcf8446|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|99|25|v|typescriptreact
+	className="px-6 py-4"
+e459c572365bf1602c72093b63dd906e|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|36|1|V|typescriptreact
+	const CommonColumnHelper: React.FC = ({ children }) => {
+	  return <>{children}</>
+	}
+17695b4247df775d335a6c9e0bc049ee|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|94|32|v|javascript
+	findAllByTestId
+5d66cb6531412779575ae657fa2a7c00|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|73|43|v|typescriptreact
+	data-testid="table-column"
+03d71f99c76be3781621f66187e1dee5|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|94|45|v|javascript
+	table-column
+2b0513850fa1e5c7ebc853f2df6af7ca|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|94|19|v|javascript
+	await
+0df93e34273b367bb63bad28c94c78d5|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|92|49|v|javascript
+	async
+9f6bb951f373cafc35186274f73f1683|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|95|5|v|javascript
+	items.querySelectorAll('td')
+691d502cfd0e0626cd3b058e5682ad1c|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|96|12|v|javascript
+	items
+5e6e908fc35bb6e33e943142a90df063|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|50|5|v|javascript
+	number_of_items
+4cafc9f2bb351d6f851457ac31a76355|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|101|43|v|typescriptreact
+	data-testid="badge"
+6b418c36dcab13e45553478909019fc0|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|99|9|v|javascript
+	correct number of columns is rendered
+efc9c000dba65f07849671c85b75803b|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|99|9|v|javascript
+	Not show 
+1a525e699bf69349f3d6e37f0faad1a4|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|101|39|v|javascript
+	main-content-row
+ffa0f4fc9f244942d380b25f18ea30cd|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|103|28|v|javascript
+	querySelectorAll
+45566d33b0c739dd2d21a2d1ce0a49e6|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|101|49|v|javascript
+	notificationRow
+e09feed522fec5f0efe5cc13d26cf1bf|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|103|12|v|javascript
+	notificationRow('td')
+df55efdda3b06a5ae87d0d245db0d317|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|101|1|V|javascript
+	    const notificationRow = screen.getByTestId('notification-row')
+70e16531cbed7cc6f3ff606a9048b692|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|5|22|v|javascript
+	{ additionalItems = [] }
+766f25f54b143c2d50ec679a79a85c6b|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|100|30|v|javascript
+	{ additionalItems }
+45a41984b260119163b636ea66ad3e7a|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|100|30|v|javascript
+	{ vertical_slug: 'plants' }
+63ddf3928dac66ceb2b65d08d9bd5dd3|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|17|12|v|javascript
+	[
+	      {
+	        name: "Microsoft - Surface Book 3 13,5'' (DE)",
+	        quantity: 2,
+	        lendis_id: 'EL-0000000507',
+	        price: '115,87 €',
+	        rental_period: 12,
+	      },
+	    ]
+835dd9380754385288d05e6616e13b4f|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|26|12|v|javascript
+	.push(additionalItems),
+1482b0d25ef4479e4746468d4c7eecef|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|106|1|V|javascript
+	    render
+	<RequestTable hits={hits} />
+a13744bca7d27651eb019414752b2537|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|108|1|V|javascript
+	      mockRequest({
+	        name: "Microsoft - Surface Book 3 13,5'' (DE)",
+	        quantity: 2,
+	        lendis_id: 'EL-0000000507',
+	        price: '115,87 €',
+	        rental_period: 12,
+	        vertical_slug: 'plants',
+	      }),
+e856298356d5dc35b4abb46fc2674efc|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|107|7|v|javascript
+	mockRequest({
+	        name: "Microsoft - Surface Book 3 13,5'' (DE)",
+	        quantity: 2,
+	        lendis_id: 'EL-0000000507',
+	        price: '115,87 €',
+	        rental_period: 12,
+	        vertical_slug: 'plants',
+	      })
+fd41651e7cf80cd55503b820c2ee20de|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|107|1|V|javascript
+	      ,
+cd2207dca0e6b50bbd9d762486c093ec|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|115|1|V|javascript
+	    renderTable([
+	    ])
+	
+18f80a71ea8c402a371c69cb5a85085f|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|108|15|v|javascript
+	mockRequest({
+	          name: "Microsoft - Surface Book 3 13,5'' (DE)",
+	          quantity: 2,
+	          lendis_id: 'EL-0000000507',
+	          price: '115,87 €',
+	          rental_period: 12,
+	          vertical_slug: 'plants',
+	        })
+78f8d2223c36653e985739193090f3ac|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|111|7|v|javascript
+	<RequestTable
+	        hits={[
+	          mockRequest({
+	            name: "Microsoft - Surface Book 3 13,5'' (DE)",
+	            quantity: 2,
+	            lendis_id: 'EL-0000000507',
+	            price: '115,87 €',
+	            rental_period: 12,
+	            vertical_slug: 'plants',
+	          }),
+	        ]}
+	      />
+00aa477878d3369168af4340c68e84bb|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|123|52|v|javascript
+	toHaveLength(cases.concat(nullableCases).length)
+	  })
+498f79c4c5bbde77f1bceb6c86fd0f6d|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|144|9|v|javascript
+	Show
+1fb55a5e4fc720e3bc195fa70d9f7b1d|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|144|53|v|javascript
+	is Plants/Furniture
+ae1568e6ab089364440789eb7568448b|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|106|52|v|javascript
+	Plants/
+75faae91b36d95d376853761e8d92c6b|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|161|19|v|javascript
+	queryBy
+dcdd1274f35ac5a8573e07b0582ad92c|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|100|102|v|typescriptreact
+	badge
+abf05e0d76256cd5f17ac17d13fba1cc|file:///Users/renan/.config/nvim/init.vim|272|1|V|vim
+	" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
+	" unicode characters in the file autoload/float.vim
+	set encoding=utf-8
+	
+	" TextEdit might fail if hidden is not set.
+	set hidden
+	
+	" Some servers have issues with backup files, see #649.
+	set nobackup
+	set nowritebackup
+	
+	" Give more space for displaying messages.
+	set cmdheight=2
+	
+	" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+	" delays and poor user experience.
+	set updatetime=300
+	
+	" Don't pass messages to |ins-completion-menu|.
+	set shortmess+=c
+	
+973657f79b2cf676ee5120ee04f90971|file:///Users/renan/.config/nvim/init.vim|272|1|V|vim
+	" Always show the signcolumn, otherwise it would shift the text each time
+	" diagnostics appear/become resolved.
+	if has("patch-8.1.1564")
+	  " Recently vim can merge signcolumn and number column into one
+	  set signcolumn=number
+	else
+	  set signcolumn=yes
+	endif
+	
+8d1b69dd9bdc9df4a8073c7a8193c7af|file:///Users/renan/.config/nvim/init.vim|263|1|V|vim
+	
+	
+	
+	
+	
+	
+	
+	
+	
+efbc8cbec28d0d35e932533dd53754f7|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|93|14|v|javascript
+	, ''
+eb00a15e05342b2b5e8e610ad2a7b69f|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|94|1|V|javascript
+	    const mainRow = screen.getByTestId('main-row')
+	    expect(mainRow.querySelectorAll('td')).toHaveLength(cases.concat(nullableCases).length)
+c3bd42308f2c86189f88d39062b3fddf|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|98|1|V|javascript
+	    const items = await screen.findAllByTestId('table-column')
+	    expect(items).toHaveLength(cases.concat(nullableCases).length)
+590c679713787183b9b4d27501ebe3c5|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|96|1|V|javascript
+	  test('correct number of columns is rendered', async () => {
+	    renderTable([mockRequest()])
+	    const mainRow = screen.getByTestId('main-row')
+	    expect(mainRow.querySelectorAll('td')).toHaveLength(cases.concat(nullableCases).length)
+	  })
+a94a5bc4b8b368a52d937ca09604f659|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|99|17|v|javascript
+	[mockRequest()]
+b0ca3f3d4d324f2f836d52c65eba5b8e|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|99|1|V|javascript
+	    render()
+	    renderTable()
+46ab2997ca006d78b35db8f6f9de7662|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|99|32|v|javascript
+	hits
+114ffd43c333c4ea693aee02709e9811|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|122|1|V|javascript
+	  test('correct number of columns is rendered', async () => {
+	    renderTable([mockRequest()])
+	    const items = await screen.findAllByTestId('table-column')
+	    expect(items).toHaveLength(cases.concat(nullableCases).length)
+	  })
+	
+	  test('correct number of columns is rendered', async () => {
+	    renderTable([mockRequest()])
+	    const items = await screen.findAllByTestId('table-column')
+	    expect(items).toHaveLength(cases.concat(nullableCases).length)
+	  })
+3cb3adf0e0cf1a312f8b1d52580e4c78|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|116|29|v|javascript
+	 'plants'
+d1df2a8a8abaa6652071e63efda2634e|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|103|32|v|typescriptreact
+	enhanced-survey-notification-row
+23dd39578881e4c16acc8c3d3b19ba01|file:///Users/renan/.config/nvim/coc-settings.json|15|1|V|json
+	  "git.addGBlameToBufferVar": true,
+9c6cc75b4badb73881fe5d91513a2082|file:///Users/renan/.config/nvim/coc-settings.json|41|1|V|json
+	  "eslint.autoFixOnSave": false,
+e66c5e086c605b6c7aed60fcaafe08aa|file:///Users/renan/.config/nvim/coc-settings.json|41|1|V|json
+	  "diagnostic-languageserver.filetypes": {
+	    "sh": "shellcheck"
+	  },
+	  "diagnostic-languageserver.linters": {
+	    "shellcheck": {
+	      "args": ["--format=gcc", "--external-sources", "-"],
+	      "command": "shellcheck",
+	      "debounce": 100,
+	      "formatLines": 1,
+	      "formatPattern": [
+	        "^[^:]+:(\\d+):(\\d+):\\s+([^:]+):\\s+(.*)$",
+	        {
+	          "column": 2,
+	          "line": 1,
+	          "message": 4,
+	          "security": 3
+	        }
+	      ],
+	      "offsetColumn": 0,
+	      "offsetLine": 0,
+	      "securities": {
+	        "error": "error",
+	        "note": "warning",
+	        "warning": "warning"
+	      },
+	      "sourceName": "shellcheck"
+	    }
+	  },
+	  "suggest.completionItemKindLabels": {
+	    "keyword": "\uf1de",
+	    "variable": "\ue79b",
+	    "value": "\uf89f",
+	    "operator": "\u03a8",
+	    "constructor": "\uf0ad",
+	    "function": "\u0192",
+	    "reference": "\ufa46",
+	    "constant": "\uf8fe",
+	    "method": "\uf09a",
+	    "struct": "\ufb44",
+	    "class": "\uf0e8",
+	    "interface": "\uf417",
+	    "text": "\ue612",
+	    "enum": "\uf435",
+	    "enumMember": "\uf02b",
+	    "module": "\uf40d",
+	    "color": "\ue22b",
+	    "property": "\ue624",
+	    "field": "\uf9be",
+	    "unit": "\uf475",
+	    "event": "\ufacd",
+	    "file": "\uf723",
+	    "folder": "\uf114",
+	    "snippet": "\ue60b",
+	    "typeParameter": "\uf728",
+	    "default": "\uf29c"
+	  }
+50c379e3bcefd78d5a1387aa00b9dd7d|file:///Users/renan/.config/nvim/coc-settings.json|38|1|V|json
+	  "explorer.keyMappings.global": {
+	    "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"]
+	  }
+b068931cc450442b63f5b3d276ea4297|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|149|69|v|javascript
+	name
+6299ba2cbd9661a5e3872b715521cd6a|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|129|8|v|javascript
+	only
+e32b040e7170531060dec583e0eb9905|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|149|1|V|javascript
+	      expect(
+	        screen.getByTestId(`enhanced-survey-notification-row-${slugName}`),
+	      ).not.toBeInTheDocument()
+ac7608eefb726baaeb6a69ad26b692d0|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|125|1|V|javascript
+	      expect(screen.getByTestId('enhanced-survey-notification-row')).toBeInTheDocument()
+b772a10041200ffc35aaf118951a0a6f|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|131|1|V|javascript
+	  test.each([['plants'], ['furniture']])(
+	    'When %s slug is given, show EnhancedSurveyNotification',
+	    (slugName) => {
+	      render(
+	        <MemoryRouter>
+	          <RequestTable
+	            hits={[
+	              mockRequest({
+	                name: "Microsoft - Surface Book 3 13,5'' (DE)",
+	                quantity: 2,
+	                lendis_id: 'EL-0000000507',
+	                price: '115,87 €',
+	                rental_period: 12,
+	                vertical_slug: name,
+	              }),
+	            ]}
+	          />
+	        </MemoryRouter>,
+	      )
+	
+	    },
+	  )
+42fdd15c1c00ebf48829f69cf2659b46|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|126|61|v|javascript
+	-${slugName}
+16ec667c86389a46f1d5c69c35e9da09|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|107|6|v|javascript
+	slugName
+63b0a2622b13a760134955179242f92a|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|93|14|v|javascript
+	, columnValue
+c26742546129c5e6e3e7971b6ca8e1cf|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|126|7|v|javascript
+	.each([['plants'], ['furniture']])(
+12ff9ce1a332baacfd7c33e7f08484dd|file:///Users/renan/webapp-fe/app/src/__tests__/unit/components/requests/RequestTable.spec.js|126|9|v|javascript
+	When %s slug is given, show EnhancedSurveyNotification
+4a56a54f3eb29cbe01856b88464a3d9b|file:///Users/renan/webapp-fe/app/src/utils/routes.ts|29|1|V|typescript
+	  {
+	  j
+	  },
+b134a801a1a3888498968fc4ea760cf7|file:///Users/renan/webapp-fe/app/src/utils/routes.ts|150|56|v|typescript
+	Requests
+8b1a9953c4611296a827abf8c47804d7|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|4|15|v|typescriptreact
+	Hello
+5d28f597b39547cacd9fe873932105d8|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|40|81|v|typescriptreact
+	/stuff
+16b2b26000987faccb260b9d39df1269|file:///Users/renan/webapp-fe/app/src/components/requests/RequestTable.tsx|20|3|v|typescriptreact
+	objectId
+211671c676ffb178fb0efb0872b68b35|file:///Users/renan/webapp-fe/app/src/utils/routes.ts|149|13|V|typescript
+	    path: '/requests/requestid:/enhanced-survey',
+	    component: loadable(() => import('../pages/Request/EnhancedSurvey')),
+bd9e249fc2fea72c7fb29b269e2a4c1c|file:///Users/renan/webapp-fe/app/src/utils/routes.ts|149|33|v|typescript
+	enhanced-survey
+cf6ec22f25cf5cc65f388a332967b5cc|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|43|16|v|typescriptreact
+	requests/
+0cf31b2c283ce3431794586df7b0996d|file:///Users/renan/webapp-fe/app/src/utils/routes.ts|151|1|V|typescript
+	    
+fab46cd176b129215f00ee23e7cf4f17|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|43|16|v|typescriptreact
+	requests/${requestId.split('#')[1]}/enhanced-survey
+af737fbbf7a0aee89ec8821787ca13e5|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|30|21|v|typescriptreact
+	${requestId.split('#')[1]}
+4f94ef4622b1369577a624e448fe53e0|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|30|5|v|typescriptreact
+	const temp = 
+9f70c872ce6aaf726210bae6813a415e|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|31|1|V|typescriptreact
+	    return requests//enhanced-survey
+7f8c624740f07ab7710685baee8f88ff|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|30|12|v|typescriptreact
+	requestId.split('#')[1]
+65ca8587d5ed43ab9a67fbb69e411636|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurveyNotification.tsx|30|25|v|typescriptreact
+	encodeURIComponent
+c0ae542a8c01622c32af54277d2b5ebc|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|4|1|V|typescriptreact
+	  console.info('helloooooooooooo')
+0ee5c20ffcad5cf5dbcd8c543f0240a4|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|4|1|V|typescriptreact
+	  return <div>Hello</div>
+9fd9f9ccd630cd4b6894051c35710572|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|7|3|v|typescriptreact
+	Survey
+f25e2bea962f0c06b1ae33c116ab3c80|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|7|1|V|typescriptreact
+	  return <Survey/>
+233559278f9f0ffaa06eeb0e8aa6809f|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|5|1|V|typescriptreact
+	  const history = useHistory()
+5383b2710152fa162413508b8be8b99e|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|6|1|V|typescriptreact
+	  const { getBasicQuestions } = useSurvey()
+bd7d5757a58b3112ad648fb549a55e19|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|6|33|v|typescriptreact
+	useSurvey
+f041c81edbb018b6f076f3f7555ed4b1|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|8|39|v|typescriptreact
+	useCart
+5dd7ac3770aaf6a4c6944ab4ce95f50c|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|15|33|v|typescriptreact
+	useState
+4a656d18cc476e273864f2244f344e82|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|13|1|V|typescriptreact
+	    history.push('/checkout/summary')
+c6568e77f61109390e82d035aaacaef0|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|19|8|v|typescriptreact
+	Headline
+d996de655ec88268be92c7e22bc4136f|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|32|23|v|typescriptreact
+	IconCongrats
+4ae9f7606bc577a54036e575241e97e6|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|31|1|V|typescriptreact
+	          <div className="flex flex-col justify-center py-32 space-y-4">
+	            <img src={IconCongrats} alt="success-icon" className="h-16" />
+	            <div className="flex flex-col items-center text-center text-lendis-dark-gray">
+	              <span>{t('survey.success.screen.title')}</span>
+	              <span className="max-w-2xl text-lendis-gray3">
+	                {t('survey.success.screen.subtitle')}
+	              </span>
+	            </div>
+	          </div>
+a3ee63c4f28181396b314675a1cd05e3|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|16|32|v|typescriptreact
+	 useState(initialState)(() => cart.surveyAnswers || [])
+70f9d1ad651bdbd12fbdc8b026c70b98|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|16|42|v|typescriptreact
+	initialState
+746a0393df91a183763c99f2633a7018|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|16|41|v|typescriptreact
+	(() => cart.surveyAnswers || [])
+d286462c34db240edf01ede582017141|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|8|17|v|typescriptreact
+	useTranslation
+fc9220bd0dab6d48039ec202e2ef87c1|file:///Users/renan/.config/nvim/init.vim|8|1|V|vim
+	Plug 'sheerun/vim-polyglot' 
+a556643ae59f692a5f6b1f9a9673f7e4|file:///Users/renan/.config/nvim/init.vim|9|1|V|vim
+	Plug 'maxmellon/vim-jsx-pretty'
+de21116053f2c88dc1279e3f0ae741f6|file:///Users/renan/.config/nvim/init.vim|9|1|V|vim
+	Plug 'ianks/vim-tsx'
+29bd9c3d58671269d787a9f724b1b36f|file:///Users/renan/.config/nvim/init.vim|10|1|V|vim
+	Plug 'dyng/ctrlsf.vim'
+4373271e72b7dae0d52f527fef94d929|file:///Users/renan/.config/nvim/init.vim|10|1|V|vim
+	Plug 'tpope/vim-fugitive'
+6fafc97d130f040823c7b33d2377f52b|file:///Users/renan/.config/nvim/init.vim|10|1|V|vim
+	Plug 'tpope/vim-rhubarb' " hub extension for fugitive
+fe751c80c01b8607bfbb3b3b0c6ec4bf|file:///Users/renan/.config/nvim/init.vim|11|1|V|vim
+	Plug 'sodapopcan/vim-twiggy'
+9e5a8ce54d716fcad7aacb40ee68788a|file:///Users/renan/.config/nvim/init.vim|11|1|V|vim
+	Plug 'rbong/vim-flog'
+aca9a55429395a9f1c52a2cc091aacd8|file:///Users/renan/.config/nvim/init.vim|12|1|V|vim
+	Plug 'junegunn/gv.vim'
+8db9389641a5ff46e098a5521c966565|file:///Users/renan/.config/nvim/init.vim|12|1|V|vim
+	Plug 'preservim/nerdtree'
+846f7a72eb6ba9f2c127c9ec3ea211ff|file:///Users/renan/.config/nvim/init.vim|12|1|V|vim
+	Plug 'f-person/git-blame.nvim'
+45e1c054e9f7e3c7df69fc54d96b2dd8|file:///Users/renan/.config/nvim/init.vim|14|1|V|vim
+	Plug 'christoomey/vim-tmux-runner'
+4d24ba3dd94edae7191f62e4aa2c02af|file:///Users/renan/.config/nvim/init.vim|16|1|V|vim
+	Plug 'unblevable/quick-scope'
+5c8f5beb0efa1db694e06f13dbcb17ba|file:///Users/renan/.config/nvim/init.vim|16|1|V|vim
+	Plug 'rktjmp/lush.nvim'
+c793b306b5fab05de3df744db4a28917|file:///Users/renan/.config/nvim/init.vim|17|1|V|vim
+	Plug 'tpope/vim-commentary'
+5c693e74cef1e04b573ae169ed88470b|file:///Users/renan/.config/nvim/init.vim|18|1|V|vim
+	Plug 'junegunn/vim-easy-align'
+eb8503aaeb842f313446ae73a00dba34|file:///Users/renan/.config/nvim/init.vim|18|1|V|vim
+	Plug 'preservim/tagbar'
+3a9d61c63ca99df79830c0fe4c7d2190|file:///Users/renan/.config/nvim/init.vim|22|1|V|vim
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+b54949360d5016b94914105b5c1b8d9f|file:///Users/renan/.config/nvim/init.vim|22|1|V|vim
+	Plug 'junegunn/fzf.vim'
+596e7ec3fa54b4ba27a51d11ada56ce6|file:///Users/renan/.config/nvim/init.vim|22|1|V|vim
+	Plug 'leafgarland/typescript-vim'
+d38b24ef60f8bb96a3c49161ad9d8797|file:///Users/renan/.config/nvim/init.vim|22|1|V|vim
+	Plug 'peitalin/vim-jsx-typescript'
+357507eeb870d269977c4a6a213b58ae|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|11|1|V|typescriptreact
+	  const { } = useSu
+8331bd9adfe99fe92da55248ea506b2a|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|10|30|v|typescriptreact
+	getEnhancedSurvey
+0bf45802856b2d591e05bfd72cd3f58e|file:///Users/renan/.config/nvim/init.vim|33|1|V|vim
+	let g:NERDTreeShowHidden = 1
+	let g:NERDTreeMinimalUI = 1
+	let g:NERDTreeIgnore = []
+	let g:NERDTreeStatusline = ''
+	" Automaticaly close nvim if NERDTree is only thing left open
+	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+	" Toggle
+	nnoremap <silent> <leader><C-b> :NERDTreeToggle<CR>
+2c062737b131d2b2c07c7135bf76799f|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|59|1|V|typescriptreact
+	  const V
+74395331605e919617e01984facea510|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|60|1|V|typescriptreact
+	usePersistentState()
+88e6266c34d3a842768cfc4efe859b45|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|62|36|v|typescriptreact
+	survey-${user}
+c13d88cb4cb02003daedb8a84e5d272a|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|62|9|v|typescriptreact
+	stuff
+ab55c07aa43e338c8a16d15622f0cf88|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|64|1|V|typescriptreact
+	  const getEnhancedQuestions = () => {}
+8b0d8fb90c97b27a216866d66650ecee|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|20|v|typescriptreact
+	useAuth
+13df766b9f4216364a577c1d5594c1b8|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|62|1|V|typescriptreact
+	  const stuff = usePersistentState('', {})
+68934a3e9455fa72420237eb05902327|file:///Users/renan/.config/nvim/coc-settings.json|3|37|v|json
+	false
+41f2dbe44e98c3ead00867311d411a7b|file:///Users/renan/.config/nvim/coc-settings.json|16|20|v|json
+	rootPatterns
+f07de013c4d387038fddf43a07ba43c4|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|12|1|V|typescript
+	  survey: [
+	    
+	  ]
+0d380fe5a8233ad69d4fa5b58f5402da|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|7|19|V|typescript
+	interface Survey {
+	  
+	}
+2fa7b041eea9ee875e012bac495a639c|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|62|37|v|typescriptreact
+	survey
+229e074800b505e5b18f64495b403453|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|62|1|V|typescriptreact
+	  const [surveys, setSurveys] = usePersistentState('surveys')
+e97759b2c6c7b16044d06314ed39c7cd|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|80|1|V|typescriptreact
+	  const { user } = useAuth()!
+ce5580b5ad2020c8f70d05d6284ddd35|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|65|3|V|typescriptreact
+	  getEnhancedSurveyById = () => {}
+e41233930918d4eecbf0ee2bd1b2dbc9|file:///Users/renan/.config/nvim/coc-settings.json|10|1|V|json
+	  "diagnostic.checkCurrentLine": true,
+b326b5062b2f0e69046810717534cb09|file:///Users/renan/.config/nvim/coc-settings.json|10|34|v|json
+	true
+b0a8076ed4c8cae6393be77595802cb9|file:///Users/renan/.config/nvim/coc-settings.json|2|1|V|json
+	  "suggest.enablePreview": true,
+feae57551f7da68dc340d755b98a0b4d|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|53|v|typescriptreact
+	surveys
+54013ba69c196820e56801f1ef5aad54|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|53|v|typescriptreact
+	cart
+c6285f9a17a9fd3c987b777d9f613f6e|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|12|1|V|typescript
+	  surveys: Record<any, any>[]
+cac0431acf84eb7d5374be298bd54a0d|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|5|55|v|typescript
+	'cart' | 'selectedAssets' | 'onboardingCart' | 'selectedAddressId' | 
+8da2465a4dfa7477430dd42757262f8f|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|5|25|v|typescript
+	keyof
+ac952548f7722f752e6c9f485d93e297|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|5|32|v|typescript
+	typeof
+7738bcaa0b2c6316c8c031de499e45ba|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|20|1|v|typescript
+	type Test = typeof keyof LocalStorageState
+9e13e55b8bdef1d6a99b90fe35f52ee8|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|20|13|v|typescript
+	typeof keyof 
+1dee8d911ef43cc6ec95f2a528c26fe3|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|20|13|v|typescript
+	keyof typeof
+f0bac7f58b9e53abde27d81b36f7ce47|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|20|1|V|typescript
+	type Test = keyof typeof LocalStorageState
+8eb58dd5e328e978169c7b0cbd30d43f|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|12|1|v|typescript
+	interface
+6a0d9eaee314c567fd72fb97ee707a36|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|13|12|v|typescript
+	Record
+8fb966c0095c67fc2bf7fff12eb4b4e1|file:///Users/renan/webapp-fe/app/src/hooks/usePersistentState.ts|13|12|v|typescript
+	Record<any, any>
+f945eda5eba5ce78e2ca9f407d81538f|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|53|v|typescriptreact
+	surveys-${}
+14c4b06b824ec593239362517f538b29|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|68|v|typescriptreact
+	username
+76f48b0e4ec6ca3c4c73fe3486373270|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|60|63|v|typescriptreact
+	user.username
+13a91ed8c4f1ddb803e235a11c9beff9|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|59|28|v|typescriptreact
+	userId: string
+f680a8e2a43738c55683b2b11b26b6c7|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|60|1|V|typescriptreact
+	  const { user }
+fb1d1bce44b7abbb68767d50e47115b1|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|59|1|V|typescriptreact
+	export const useSurveys = () => {
+	  const [surveys, setSurveys] = usePersistentState(`surveys-${userId}`, [])
+	
+	  const getSurveyByCustomerId = () => {}
+	
+	  const getEnhancedSurveyById = () => {}
+	
+	  return {
+	    getEnhancedSurveyById,
+	  }
+	}
+34d8b040bf571b1f2266c3f15920d747|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|1|V|typescriptreact
+	  const [surveys, setSurveys] = usePersistentState(`surveys-${userId}`, [])
+4441b0dac90ef3873aa7a98ff4005e1a|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|59|1|V|typescriptreact
+	export const useSurveys = () => {
+	  const { user }
+	
+	  const getSurveyByCustomerId = () => {}
+	
+	  const getEnhancedSurveyById = () => {}
+	
+	  return {
+	    getEnhancedSurveyById,
+	  }
+	}
+	
+0007f529dbfb5f71dd5e0a13ce005fc3|file:///Users/renan/.config/nvim/init.vim|26|1|V|vim
+	Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+	Plug 'jparise/vim-graphql'
+5b82a54d38d68dc90d7e4a7602f85025|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|10|1|V|typescriptreact
+	import { useAuth } from './useAuth'
+d7e57e67e1adbbee0305edcbef45bbd5|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|64|1|V|typescriptreact
+	  const [surveys, setSurveys] = usePersistentState(`surveys-${userId}` as 'surveys', [])
+1cd8117ea0b7bf364d4b54b6160975e8|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|59|1|V|typescriptreact
+	  const []
+8e44f0089b076e18a718eb9ca3d94674|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|61|76|v|typescriptreact
+	userId
+b22e1409107a8e3711a9bb555c881ab2|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|64|19|v|typescriptreact
+	[id]
+7692ac37f94c4b7e2a1547a5a8950587|file:///Users/renan/webapp-fe/app/src/hooks/useSurvey.tsx|64|19|v|typescriptreact
+	.find(survey => )
+c51ac8c4134b08b14a0b5316051a780f|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|13|1|V|typescriptreact
+	  const { updateBasicSurvey, cart } = useCart()!
+4ffa76e3816749df21843403af380646|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|4|1|V|typescriptreact
+	import { useCart } from '../../hooks/useCart'
+07d6e9eaf81efd4c79a1e2b1e553ac53|file:///Users/renan/webapp-fe/app/src/pages/Request/EnhancedSurvey.tsx|17|48|v|typescriptreact
+	cart.surveyAnswers || []
+9ce62d2568606a590368e561be553418|file:///Users/renan/.config/nvim/init.vim|23|1|V|vim
+	Plug 'pangloss/vim-javascript'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'peitalin/vim-jsx-typescript'
